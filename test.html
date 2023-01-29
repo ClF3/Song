@@ -1,0 +1,39 @@
+<html>
+
+<head>   
+    <meta charset="UTF-8">
+    <title>大氿歌</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <script type="text/javascript">
+        var system = {};
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        if (system.win || system.mac || system.xll) {
+            //如果是电脑跳转到
+            window.location.href = "./error.html";
+           
+        } else {  
+          //如果是手机,跳转到
+          window.location.href = "./index734679264.html";
+        }
+      </script>
+</head>
+
+<!-- 
+<p style="text-align:center;font-size:30px">常用网址导航</p>
+
+<video src="vedio.mp4" poster="1.jpg" controls>
+
+    Please turn to a web browser that supports HTML5
+</video>
+<bgsound src="test11.wav">
+   
+<body>
+<audio controls>
+    <source src="test11.wav" type="audio/mp3"/>
+</audio>
+</body>
+ 在此处写注释 --> 
+</html>
