@@ -10,7 +10,7 @@
         system.win = p.indexOf("Win") == 0;
         system.mac = p.indexOf("Mac") == 0;
         system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-        if (system.win || system.mac || system.xll||navigator.appCodeName.indexOf("Wechat")==-1) {
+        if (system.win || system.mac || system.xll||navigator.userAgent.toLowerCase().indexOf("micromessenger")==-1) {
             //如果是电脑跳转到
             window.location.href = "./error.html";
            
@@ -22,7 +22,7 @@
 </head>
 
 <!-- 
-<p style="text-align:center;font-size:30px">常用网址导航</p>
+<p style="text-align:center;font-size:30px">Check</p>
 
 <video src="vedio.mp4" poster="1.jpg" controls>
 
