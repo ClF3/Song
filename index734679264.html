@@ -24,6 +24,18 @@
 <embed src="test11.mp3" type="Audio/mp3" width="300" height="200" >  
     
 在此处写注释 --> 
+<script type="text/javascript">
+        var system = {};
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        if (system.win || system.mac || system.xll||navigator.userAgent.toLowerCase().indexOf("micromessenger")==-1) {
+            //如果是电脑跳转到
+            window.location.href = "./error.html";
+           
+        }
+      </script>
 <body>
 <audio controls="controls" controlsList="nodownload" oncontextmenu="return false">
     <source src="test11.mp3" type="audio/mp3"/>
